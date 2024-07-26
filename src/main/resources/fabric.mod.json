@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "no-more-villagers",
+	"version": "${version}",
+	"name": "No More Villagers",
+	"description": "Stops villages from generating!",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/no-more-villagers",
+		"sources": "https://github.com/herrobriam/no-more-villagers"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-more-villagers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.removevillagers.NoMoreVillagers"
+		]
+	},
+	"mixins": [
+		"no-more-villagers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.18",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
